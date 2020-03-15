@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "coveralls": "^3.0.9",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
