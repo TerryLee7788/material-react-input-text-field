@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import InputField from './InputField';
-import './index.scss';
-
-console.log('InputField: ', InputField);
-
+import styles from './index.scss';
 
 const App = () => {
 
@@ -16,9 +13,10 @@ const App = () => {
         <div>
             <h1>React-material InputField</h1>
             <h3>Examples:</h3>
-            <div className="examples">
+            <div className={styles.examples}>
                 <div>
                     <InputField
+                        value={name}
                         placeHolder="Standard"
                         handleChange={handleChange}
                     />

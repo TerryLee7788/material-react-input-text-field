@@ -1,61 +1,21 @@
-module.exports = {
+const merge = require('webpack-merge');
+const common = require('./webpack.config.common');
+
+module.exports = merge(common, {
   mode: 'production',
-  entry: {
-    app: './src/index.js',
-    index: './src/InputField/index.js'
-  },
-  output: {
-    path: `${__dirname}/dist`,
-    publicPath: '/',
-    filename: '[name].js',
-  },
-  devServer: {
-    contentBase: './dist',
-    writetodisk: true
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-          // 'eslint-loader'
-        ]
-      },
-      {
-        test: /\.(s[ac]ss|css)$/,
-        exclude: /node_modules/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-          'postcss-loader',
-          'sass-loader'
-        ]
-      }
-    ]
-  },
-  resolve: {
-    extensions: [
-      '.js',
-      '.jsx',
-      '.scss',
-    ]
-  },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendors: {
-          chunks: 'all',
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-        },
-      },
+  externals: {
+    // Don't bundle react or react-dom
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React"
     },
-  }
-};
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM",
+      root: "ReactDOM"
+    }
+  },
+});

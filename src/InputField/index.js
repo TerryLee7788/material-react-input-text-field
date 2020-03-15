@@ -12,12 +12,9 @@ const InputComponent = ({
     ...rest
 }) => {
 
-    const [inputValue, setInputValue] = useState(value);
-
     const handleInputChanged = (e) => {
 
         const { value: currentValue } = e.currentTarget;
-        setInputValue(currentValue);
         handleChange(currentValue);
 
     }
@@ -27,7 +24,7 @@ const InputComponent = ({
             className={`
                 ${styles.input}
                 ${variant && styles[variant] ? styles[variant] : ''}
-                ${inputValue !== '' ? styles.above : ''}
+                ${value !== '' ? styles.above : ''}
                 ${className}
             `}
             style={{
@@ -38,7 +35,7 @@ const InputComponent = ({
                 style={{
                     borderBottomColor: textColor
                 }}
-                defaultValue={value}
+                value={value}
                 onChange={handleInputChanged}
                 {...rest}
             />
@@ -60,7 +57,3 @@ const InputComponent = ({
 }
 
 export default InputComponent
-
-const hi = 123
-
-export { hi }
