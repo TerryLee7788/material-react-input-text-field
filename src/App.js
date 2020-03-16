@@ -23,7 +23,6 @@ const App = () => {
                 </div>
                 <div>
                     <InputField
-                        value="terry"
                         placeHolder="Filled"
                         variant="filled"
                     />

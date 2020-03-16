@@ -5,6 +5,10 @@ const common = require('./webpack.config.common.js');
 
 module.exports = merge(common, {
   mode: 'development',
+  entry: {
+    ...common.entry,
+    app: './src/index.js'
+  },
   devServer: {
     contentBase: resolve(__dirname, 'dist'),
     port: 7788,

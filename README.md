@@ -1,5 +1,11 @@
 <p align="left">
+    <a href="https://travis-ci.org/TerryLee7788/material-react-input-text-field">
+      <img src="https://travis-ci.org/TerryLee7788/material-react-input-text-field.svg?branch=master" />
+    </a>
     <a href='https://coveralls.io/github/TerryLee7788/material-react-input-text-field?branch=master'><img src='https://coveralls.io/repos/github/TerryLee7788/material-react-input-text-field/badge.svg?branch=master' alt='Coverage Status' /></a>
+    <a href="https://lgtm.com/projects/g/TerryLee7788/material-react-input-text-field/context:javascript">
+        <img alt="undefined" src="https://img.shields.io/lgtm/grade/javascript/g/TerryLee7788/material-react-input-text-field.svg?logo=lgtm&logoWidth=18"/>
+    </a>
 </p>
 
 # React Material Inputs

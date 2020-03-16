@@ -3,9 +3,9 @@ npm-debug.log
 webpack.config.*.js
 webpack.config.js
 postcss.config.js
-package.json
 *.html
 src/*
 .babelrc
 dist/app.js
-node_modules
+.travis.yml
+coverage/*

@@ -3,7 +3,6 @@ const { resolve } = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    app: './src/index.js',
     index: './src/InputField/index.js'
   },
   output: {

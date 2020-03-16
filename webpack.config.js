@@ -3,8 +3,11 @@ const common = require('./webpack.config.common');
 
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    ...common.output,
+    libraryTarget: 'umd',
+  },
   externals: {
-    // Don't bundle react or react-dom
     react: {
       commonjs: "react",
       commonjs2: "react",
