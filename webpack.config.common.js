@@ -1,7 +1,6 @@
 const { resolve } = require('path');
 
 module.exports = {
-  mode: 'production',
   entry: {
     index: './src/InputField/index.js'
   },

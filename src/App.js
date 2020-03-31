@@ -23,6 +23,7 @@ const App = () => {
                 </div>
                 <div>
                     <InputField
+                        defaultValue="Hello World"
                         placeHolder="Filled"
                         variant="filled"
                     />
