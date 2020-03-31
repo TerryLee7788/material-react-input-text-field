@@ -17,6 +17,8 @@ npm i material-react-input-text-field
 
 ## Usage
 ```js
+import InputField from 'material-react-input-text-field'
+
 const App = () => {
 
     const [name, setName] = useState('')
