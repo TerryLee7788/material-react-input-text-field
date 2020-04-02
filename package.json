@@ -1,8 +1,10 @@
 {
   "name": "material-react-input-text-field",
   "version": "1.0.4",
-  "description": "",
+  "description": "react material input text field",
   "main": "dist/index.js",
+  "homepage": "https://github.com/TerryLee7788/material-react-input-text-field",
+  "repository": "github:TerryLee7788/material-react-input-text-field.git",
   "scripts": {
     "build": "webpack -p",
     "rebuild": "rm -rf ./dist && npm run build",
@@ -13,8 +15,16 @@
     "test:coverage": "jest --coverage --colors",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "material",
+    "material input",
+    "material text field"
+  ],
+  "bugs": {
+    "url": "https://github.com/TerryLee7788/material-react-input-text-field/issues"
+  },
+  "author": "terry",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.4",

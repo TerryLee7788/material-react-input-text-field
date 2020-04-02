@@ -54,3 +54,12 @@ const App = () => {
 
 };
 ```
+
+## Overview
+|Name|Description|
+| -- | -- |
+|value|Can Controlled or Uncontrolled component|
+|placeHolder|just input placeholder|
+|handleChange|handle input change event|
+|variant|now have "standard", "filled"|
+|...rest|you can add any type of attributes if you want|
